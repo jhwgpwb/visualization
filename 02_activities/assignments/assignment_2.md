@@ -10,18 +10,10 @@
 - For each visualization (good and bad):  
     - Explain (with reference to material covered up to date, along with readings and other scholarly sources, as needed) why you classified that visualization the way you did.
       ```
-      Your answer...
+     
 
 
 
-
-
-
-
-      ```
-    - How could this data visualization have been improved?  
-      ```
-      Your answer...
 
 
 
