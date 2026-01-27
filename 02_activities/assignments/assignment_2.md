@@ -10,18 +10,35 @@
 - For each visualization (good and bad):  
     - Explain (with reference to material covered up to date, along with readings and other scholarly sources, as needed) why you classified that visualization the way you did.
       ```
-      Your answer...
+      This one is what I think is good: https://public.tableau.com/app/profile/kffdata/viz/InsurerParticipationonACAMarketplaces2014-2021/Dashboard1
+
+      Rationales: I think this figure is good because it communicates the main message clearly. First, the title is clear, so I immediately know the topic and the time span, I can treat the dashboard as a comparison tool rather than a one-year snapshot. Second, the map is an appropriate choice because insurer participation is fundamentally geographic: people care about where they live, and the county-level shading lets me quickly spot areas with limited choice versus areas with more options. The legend is also quite clear. That binning is helpful because the policy interpretation is basically about choice, and using only a few categories reduces confusion.
+
+      In addition, the dashboard is well organized. The map is the largest element, along with the pie chart (“Percent of Enrollees”) provides a quick national summary, which complements the map: the map answers "where," while the pie chart answers "how many people." The filters (year, state, insurer highlight) are also a good design because they support exploration without cluttering the visual. I can compare different years to see how participation changes, or narrow to a specific state, or highlight an insurer, all while keeping the overall layout stable. Finally, I like it shows the data source and a note about enrollment timing, because that increases transparency and reduces the risk of misunderstanding what the numbers represent. Overall, it is visually clean, interpretable, and useful for both a quick overview and deeper exploration.
+
+      Here's what I feel is not good enough: https://public.tableau.com/app/profile/un.sdg.action.campaign/viz/MyWorld2030survey_Q2bydemographicgroup/MyWorld2030survey_Q2bydemographicgroups
+
+      Rationales: The biggest issue in this graph is visual clutter and low discriminability. The chart is an parallel-sets style view: many colored bands cross between categories (gender, age, disability, education). When there are lots of crossings, the display quickly becomes hard to trace—line crossings and overlap are a known source of clutter in these designs, and they directly reduce readability because viewers can’t reliably follow which category connects to which. 
+
+      A second issue is over-reliance on color. Each SDG has its own bright hue, so the graphic depends on people matching many colors across multiple panels. That is cognitively heavy, and it is also fragile for accessibility. Visualization research also warns against palettes that behave like “rainbow” schemes—many distinct hues without a perceptual ordering can be confusing and can create false visual boundaries. Using so many saturated hues at once increases the chance that the viewer sees the color noise rather than the pattern.
+
+      Third, the encoding is not great for accurate comparison. The figure says “goals ranked by number of responses,” but the viewer is not primarily judging position on a shared axis (which is usually the most accurate perceptual channel for comparison). In practice, a simpler ranked bar chart or small multiples of ranked bars by demographic would let us compare “top concerns” much more easily.
 
 
-
-
-
+    
 
 
       ```
     - How could this data visualization have been improved?  
       ```
-      Your answer...
+     This SDG dashboard could be improved by redesigning it around the actual task—compare which SDGs rank highest within each demographic group—instead of making people to trace many crossing lines. The current parallel-sets make it hard to follow any category reliably. A more effective approach would be to replace the crossing-line view with small multiples of sorted bar charts for each demographic group (e.g., Women/Men/Other; disability; education), showing the top SDGs by count/percent. That would use position on a common scale, instead of asking viewers to decode rank through tangled connections. If the goal is to rank, then the display should visually privilege to the rank: show ranks explicitly and allow sorting by "Top 1," "Top 2," etc., rather than making rank an indirect outcome of reading a dense network.
+
+     Color also needs to be simplified. Using 17 highly saturated SDG colors at once is overload; it can mislead or confuse because many hues are hard to distinguish consistently, especially when thin lines overlap. A practical fix is: keep SDG "brand" colors only when a single SDG is selected, but default to a neutral palette and use one highlight color for the selected goal. This would help improve accessibility.
+
+
+     Reference
+    1. Data Visualization: Best Practices. Statistics Canada. 2023. https://www150.statcan.gc.ca/n1/pub/89-26-0005/892600052022001-eng.htm
+    2.Midway SR. Principles of Effective Data Visualization. Patterns (N Y). 2020 Nov 11;1(9):100141. doi: 10.1016/j.patter.2020.100141. PMID: 33336199; PMCID: PMC7733875.
 
 
 
