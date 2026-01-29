@@ -8,6 +8,8 @@
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
 
 
+The dataset I use here list points of interest associated with each of Toronto’s 158 neighbourhoods as compiled by the Visitor Economy Office.
+
 - For each visualization, describe and justify: 
     > What software did you use to create your data visualization?
     -R
@@ -219,6 +221,11 @@ If I used other tools like Tableau or Excel without saving a workbook, reproduci
     -Finding and interpreting the dataset: locating the StrollTO dataset on the City of Toronto Open Data Portal, checking the documentation, and confirming what each field represents (e.g., Ward_Name, POI records).
     Defining the analysis unit: deciding what “by ward” should mean (counting POIs per ward) and choosing an appropriate aggregation method.
     Data cleaning: handling missing Ward_Name values, trimming inconsistent text formatting including extra spaces, punctuation, and checking for potential duplicates that could distort counts.
+
+
+    Data source: City of Toronto’s Open Data Portal: https://open.toronto.ca/dataset/strollto/
+
+   
 
 - This assignment is intentionally open-ended - you are free to create static or dynamic data visualizations, maps, or whatever form of data visualization you think best communicates your information to your audience of choice! 
 - Total word count should not exceed **(as a maximum) 1000 words** 
